@@ -1,2 +1,4 @@
-# CosmoCloud_Project
-# CosmoCloud - Project Developed by Paramveer Singh
+# CosmoCloud 
+
+This is a part of some project developed by Paramveer Singh
+
