@@ -3,7 +3,7 @@
 This is a part of Hiring Task. Developed and Deployed by Paramveer Singh
 
 ## Local Installation
-It is recommended to create a virtual environment. You can run this application in 3 simple steps:
+It is recommended to create a virtual environment first. You can run this application in 3 simple steps:
 
 1. Clone the Repository
 
