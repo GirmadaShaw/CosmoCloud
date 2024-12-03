@@ -23,10 +23,10 @@ It is recommended to create a virtual environment first. You can run this applic
     fastapi dev run.py
 ```
 
-# CONTRIBUTION 
+## Contributions
 No contributions will be entertained as of now.
 
-# LICENSE
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
