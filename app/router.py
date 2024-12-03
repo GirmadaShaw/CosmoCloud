@@ -1,5 +1,6 @@
 from run import app
 from fastapi import APIRouter, HTTPException
+from fastapi.responses import HTMLResponse
 from app import students_collection
 from app.models import Student
 from bson import ObjectId
@@ -8,6 +9,26 @@ from logs.logger import logging
 
 router = APIRouter()
 logging.info("router instance created")
+
+
+logging.info("Rendering home page ")
+@router.get("/", response_class= HTMLResponse)
+def home(): 
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Cosmo Cloud</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;"> CosmoCloud Hiring Task</h1>
+        <h2 style="text-align: center;">Change the url to "http://localhost:8000/docs" </h2>
+
+        <p> Name: Paramveer Singh </p>
+        <p> Email: paramveersingh8902@gmail.com </p>
+
+    </body>
+    </html> """
 
 
 logging.info("Creating API to add new student in the database")
@@ -96,6 +117,7 @@ async def update_student(id: str, student: Student):
             raise HTTPException(status_code=404, detail="Student not found")
         
         return {}
+    
     except Exception as e:
 
         logging.critical("Error occured while patching new information")

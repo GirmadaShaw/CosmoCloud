@@ -18,7 +18,7 @@ mdurl==0.1.2
 pydantic==2.10.2
 pydantic_core==2.27.1
 Pygments==2.18.0
-pymongo==3.12.0
+pymongo==4.10.1
 python-dotenv==1.0.1
 python-multipart==0.0.18
 PyYAML==6.0.2

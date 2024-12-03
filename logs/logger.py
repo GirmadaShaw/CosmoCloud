@@ -1,7 +1,7 @@
 import logging
 
 logging.basicConfig(
-    filename = 'app.logs',
+    filename = './logs/app.logs',
     filemode = 'w',
     level = logging.DEBUG, 
     format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
