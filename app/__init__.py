@@ -11,10 +11,10 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 logging.info("Mongo Client set up is complete")
 
 db = client["student_management"] # my database
-logging.info("""  "student_management" database set up is complete.  """)
+logging.info(""""student_management" database set up is complete.  """)
 
 students_collection = db["students"]  # my collection name
-logging.info(""" Collection set up is complete by name - "students_collection" """)
+logging.info("""Collection set up by name - "students_collection" is complete  """)
 
 
 
